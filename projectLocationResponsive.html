@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>project responsive location</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./css/scss/_icons.scss">
+  <title>Location Responsive</title>
+</head>
+<body>
+
+    <div class="application">
+      <div class="application-header" style="background-color: gold;">header</div>
+      <div class="application-sidebar">
+
+        <!------------------------------------------sidebar header -->
+        <div class="sidebar__header">
+          <span> WORKCation</span>
+          <img src="./images/vecteezy_digital-art-beautiful-island-resort-ai-generative_30602557.jpg" alt="home logo">
+        </div>
+        <!--------------------------- option bedroom,bathroom,price -->
+        <div class="sidebar__option">
+          <div class="option sidebar-bedroom">
+            <label for="choose-numBed">Bedroom</label>
+            <select name="bedroom"  id="choose-numBed"  class="select option__bedroom">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+          <div class="option sidebar-bathroom">
+            <label for="choose-numBathroom">Bathroom</label>
+            <select name="bathroom" id="choose-numBathroom" class="select  option__bathroom">
+              <option value="1">1</option>
+              <option value="2">2</option>
+            </select>
+          </div>
+          <div class="option sidebar-price">
+            <label for="choose-price">Price Range</label>
+            <select class="select option__price" >
+              <option value="2000">up to $2,000 /wk</option>
+              <option value="1800">up to $1,800 /wk</option>
+              <option value="1500">up to $1,500 /wk</option>
+              <option value="1300">up to $1,300 /wk</option>
+            </select>
+          </div>
+        </div>
+        <!-- end option bedroom,bathroom,price----------------------------- -->
+          <hr class="diving-line">
+        <!-------------------------------------------- option property type -->
+        <div class="sidebar__property">
+          <span class="sidebar__title">Property Type</span>
+          <div>
+            <input type="radio" id="house" name="house" value="house"  checked>
+            <label for="">House</label>
+             house
+          </div>
+          <div>
+            <input type="radio" id="apartment" name="house"  value="apartment">
+            <label for="">Apartment</label>
+        
+          </div>
+          <div>
+            <input type="radio" id="loft" name="house"  value="loft">
+            <label for="">Loft</label>
+          </div>
+          <div>
+            <input type="radio" id="townhouse" name="house"  value="townhouse">
+            <label for="">Townhouse</label>
+          </div>
+        </div>
+        <!-- end property type------------------------------------------------- -->
+        <hr class="diving-line">
+
+        <!------------------------------------------------------ sidebar amenities -->
+        <div class="sidebar__amenities">
+          <span class="sidebar__title">Amenities</span>
+          <div>
+            <label for="">
+              <input type="checkbox">
+              Balcony
+            </label>
+          </div>
+          <div>
+            <label for="">
+              <input type="checkbox">
+              Air conditioning
+            </label>
+          </div>
+          <div>
+            <label for="">
+              <input type="checkbox"  checked>
+              Pool
+            </label>
+          </div>
+          <div>
+            <label for="">
+              <input type="checkbox">
+              Beach
+            </label>
+          </div>
+          <div>
+            <label for="">
+              <input type="checkbox">
+              pet firendly
+            </label>
+          </div>
+          <div>
+            <label for="">
+              <input type="checkbox">
+              Kid firendly
+            </label>
+          </div>
+          <div>
+            <label for="">
+              <input type="checkbox">
+              Parking
+            </label>
+          </div>
+        </div>
+        <!-- end sidebar amenities-------------------------------------------- -->
+         <hr class="diving-line">
+         <!-- --------------------------------------------------sidebar button -->
+         <div class="sidebar__button">
+          <button type="submit">Update result</button>
+         </div>
+         <!-- end sidebar button---------------------------------------------- -->
+      </div>
+
+      <!-- -------------------------------------------------appliction content -->
+      <div class="application-content">
+        <!-- content one -->
+        <div class="content__location">
+
+          <img src="./images/modernhome12.jpg" alt="">
+
+          <div class="location__up">
+            <div class="location__up-number">
+              <span class="location__background">PLUS</span>
+              <span>3 BEDS.</span>
+              <span>2 BATHS</span>
+            </div>
+
+            <div class="location__up-description">
+              <p>Moder home in city center</p>
+            </div>
+
+            <div class="location__up-price">
+              <span>$1,400 /wk</span>
+            </div>
+
+            <div class="location__up-ranc">
+              <i class="fa fa-star" aria-hidden="true">*****</i>
+              <span> 34 Reviews</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- content two -->
+        <div class="content__location">
+          <img src="./images/moder17.jpg" alt="">
+
+          <div class="location__up">
+            <div class="location__up-number">
+              <span class="location__background">PLUS</span>
+              <span>3 BEDS.</span>
+              <span>2 BATHS</span>
+            </div>
+            <div class="location__up-description">
+              <p>Moder home in city center</p>
+            </div>
+
+            <div class="location__up-price">
+              <span>$1,400 /wk</span>
+            </div>
+
+            <div class="location__up-ranc">
+              <i class="fa fa-star" aria-hidden="true">*****</i>
+              <span> 34 Reviews</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- content three -->
+        <div class="content__location">
+          <img src="./images/modernhome.jpg" alt="">
+
+          <div class="location__up">
+            <div class="location__up-number">
+              <span class="location__background">PLUS</span>
+              <span>3 BEDS.</span>
+              <span>2 BATHS</span>
+            </div>
+
+            <div class="location__up-description">
+              <p>Moder home in city center</p>
+            </div>
+
+            <div class="location__up-price">
+              <span>$1,400 /wk</span>
+            </div>
+
+            <div class="location__up-ranc">
+              <i class="fa fa-star" aria-hidden="true">*****</i>
+              <span> 34 Reviews</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- content four -->
+        <div class="content__location">
+          <img src="./images/modern15.jpg" alt="">
+
+          <div class="location__up">
+            <div class="location__up-number">
+              <span class="location__background">PLUS</span>
+              <span>3 BEDS.</span>
+              <span>2 BATHS</span>
+            </div>
+
+            <div class="location__up-description">
+              <p>Moder home in city center</p>
+            </div>
+
+            <div class="location__up-price">
+              <span>$1,400 /wk</span>
+            </div>
+
+            <div class="location__up-ranc">
+              <i class="fa fa-star" aria-hidden="true">*****</i>
+              <span> 34 Reviews</span>
+            </div>
+          </div>
+
+        </div>
+        <div class="content__location">
+          <img src="./images/modernhome9.jpg" alt="">
+  
+          <div class="location__up">
+            <div class="location__up-number">
+              <span class="location__background">PLUS</span>
+              <span>3 BEDS.</span>
+              <span>2 BATHS</span>
+            </div>
+
+            <div class="location__up-description">
+              <p>Moder home in city center</p>
+            </div>
+
+            <div class="location__up-price">
+              <span>$1,400 /wk</span>
+            </div>
+
+            <div class="location__up-ranc">
+              <i class="fa fa-star" aria-hidden="true">*****</i>
+              <span> 34 Reviews</span>
+            </div>
+          </div>
+
+        </div>
+        <div class="content__location">
+          <img src="./images/moderhome8.jpg" alt="">
+
+          <div class="location__up">
+            <div class="location__up-number">
+              <span class="location__background">PLUS</span>
+              <span>3 BEDS.</span>
+              <span>2 BATHS</span>
+            </div>
+
+            <div class="location__up-description">
+              <p>Moder home in city center</p>
+            </div>
+
+            <div class="location__up-price">
+              <span>$1,400 /wk</span>
+            </div>
+
+            <div class="location__up-ranc">
+              <i class="fa fa-star" aria-hidden="true">*****</i>
+              <span> 34 Reviews</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>

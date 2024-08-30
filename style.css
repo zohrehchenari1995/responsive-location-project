@@ -1,5 +1,5 @@
- *,
-*::before 
+ *
+,*::before 
 ,*::after{
   box-sizing: border-box;
   padding: 0;
@@ -25,6 +25,7 @@
   --color-checked-rating: #ffa500;
 }
 html{
+  
   font-size: 62.5%;
 }
 
@@ -42,19 +43,28 @@ body{
 }
 /*_____________________________ grid */
 
-.application{
+/* .application{
+  background-color: red;
   max-width: 900px;
   margin-right: 10px;
   margin-top: 200px;
   margin-left: 10px;
   margin-bottom: 20px;
+} */
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto;
 }
 .application{
   display: grid;
-  grid-template-columns: 1fr;
+  /* taqir dadam az 1fr kardam 350px to halat taki ok shod desktop ok shod.......... */
+  grid-template-columns: 700px;
   grid-template-rows: auto 1fr;
-  /* height: 115vh; */
-
+}
+.content--gap{
+  margin-top: 20px;
 }
 /* divin line */
 .diving-line{
@@ -64,7 +74,7 @@ body{
 }
 /*----------------------- application header */
 .application-header{
-  width: 1000px;
+  width: 700px;
   height: 80px;
   background-color: var(--color-background-color-header);
 }
@@ -205,13 +215,15 @@ input[type="checkbox"] {
   grid-template-columns: 1fr;
   gap: 5rem;
   padding: 2rem;
-  padding-top: 10rem;
+  padding-top: 3.5rem;
+  border: 5px solid red;
 }
+
 .content__location{
   width: 280px;
-  height: 260px;
-   
+  height: 260px; 
 }
+
 .application-content div img{
   width: 280px;
   height: 260px;
@@ -222,7 +234,7 @@ input[type="checkbox"] {
   height: 130px;
   background-color: var(--color-location-up);
   position: relative;
-  bottom: 80px;
+  bottom: 105px;
   left: 15px;
   border-radius: 8px;
 }
@@ -252,22 +264,41 @@ input[type="checkbox"] {
 
 /* _____________________  resonsive css */
 @media screen and (min-width:768px){
+  /* .application{
+    width: 700px;
+  }
+  .application-header{
+    width: 700px;
+  } */
   .application-content{
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 296px 1fr;
+
+  }
+  .content--gap{
+    margin-top: 15px;
   }
 }
 /*_____________________ responsive css */
 @media screen and (min-width:1024px){
   .application{
-    grid-template-columns: 296px 1fr;
-    /* grid-template-rows: 1fr 1fr 1fr; */
+    grid-template-columns: 296px 1000px;
+    border: 5px solid gold;
   }
   .application-sidebar{
-    display: block;
-    grid-row: 1/-1;
-    color: var(--color-text-sidebar);
-  }
-  .application-content{
+      display: block;
+      grid-row: 1/-1;
+      color: var(--color-text-sidebar);
+    }
+    .application-content{   
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .application-header{
+    width: 1000px;
+  }
+  .content__location .location__up{
+    position: relative;
+  bottom: 80px;
+  left: 15px;
+  border-radius: 8px;
   }
 }
